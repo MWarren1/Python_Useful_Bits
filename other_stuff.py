@@ -1,4 +1,4 @@
-## using arguments with a script
+##### using arguments with a script
 
 import argparse
 
@@ -17,3 +17,21 @@ if output is None:
 
 
 #########################################################
+
+##### get a list of files from a folder
+
+import os.path
+from os import walk
+
+folder = "C:\temp\ ## needs to end with a \
+
+## find all files in folder and make a list
+(_, _, filenames) = walk(folder).next()
+
+## loop through all the files to do some thing
+totalfiles = (len(filenames) - 1)
+currentfilenum = 0
+while currentfilenum <= totalfiles:
+		currentfile = folder + filenames[currentfilenum]
+		## do some thing with that filename
+	
