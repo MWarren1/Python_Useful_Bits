@@ -35,3 +35,14 @@ while currentfilenum <= totalfiles:
 		currentfile = folder + filenames[currentfilenum]
 		## do some thing with that filename
 	
+#########################################################
+
+##### time how long script takes to run
+
+import time
+## start of the script
+start_time = time.time()
+
+## end of the script
+end_time = time.time()
+print(end_time - start_time)
